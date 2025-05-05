@@ -90,7 +90,7 @@ export default function Home() {
             className="mb-4"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-              Hi, I&apos;m <span className="gradient-text">Priyanshu</span>
+              Hi, I&apos;m <span className="gradient-text">Ritik</span>
             </h1>
           </motion.div>
           
@@ -208,7 +208,7 @@ export default function Home() {
             >
               <Image
                 src="/profile.jpg" // Add your profile image to public folder
-                alt="Priyanshu"
+                alt="Ritik"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

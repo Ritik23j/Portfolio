@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://priyanshu.id",
+  "homepage": "https://ritikjain.info",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -18,9 +18,9 @@
     "@react-three/fiber": "^8.15.13",
     "framer-motion": "^12.8.0",
     "gsap": "^3.12.7",
-    "next": "15.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "^15.3.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-intersection-observer": "^9.16.0",
     "three": "^0.160.0"
   },

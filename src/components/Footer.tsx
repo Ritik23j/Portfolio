@@ -7,8 +7,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/Spriy4nshu' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/priy4nshu/' },
+    { name: 'GitHub', url: 'https://github.com/Ritik23j/' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ritik-jain23/' },
     { name: 'Kaggle', url: 'https://www.kaggle.com/priyanshu403' },
     // Add more social links as needed
   ];
@@ -47,7 +47,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <Link href="#home" className="text-2xl font-bold gradient-text">
-              Priyanshu
+              Ritik
             </Link>
             <p className="text-sm text-foreground/70 mt-2">
               Developer, designer, and creator.
@@ -104,13 +104,13 @@ export default function Footer() {
           transition={{ delay: 0.5, duration: 0.5 }}
           className="pt-8 mt-8 border-t border-border/50 text-center text-sm text-foreground/50"
         >
-          <p>© {currentYear} Priyanshu. All rights reserved.</p>
+          <p>© {currentYear} Ritik. All rights reserved.</p>
           <p className="mt-1">
             <Link
-              href="https://priyanshu.id"
+              href="https://ritikjain.info"
               className="hover:text-accent-light transition-colors"
             >
-              priyanshu.id
+              ritikjain.info
             </Link>
           </p>
         </motion.div>

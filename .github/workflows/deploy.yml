@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
-  
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -24,34 +24,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "18"
           cache: npm
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      
+
       - name: Build with Next.js
         run: npm run build
-      
+
       - name: Copy CNAME to output directory
         run: |
           cp CNAME out/ || echo "CNAME file not found"
           cp public/CNAME out/ || echo "Public CNAME file not found"
-          echo "priyanshu.id" > out/CNAME
-          
+          echo "ritikjain.info" > out/CNAME
+
       - name: Create .nojekyll file
         run: touch out/.nojekyll
-          
+
       - name: List out directory content
         run: ls -la out/
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Priyanshu | Portfolio",
+  title: "Ritik | Portfolio",
   description: "Personal portfolio website showcasing my projects and skills",
-  metadataBase: new URL('https://priyanshu.id'),
+  metadataBase: new URL('https://ritikjain.info'),
   openGraph: {
-    title: "Priyanshu's Portfolio",
+    title: "Ritik's Portfolio",
     description: "Developer, designer, and creator",
-    url: 'https://priyanshu.id',
-    siteName: 'Priyanshu Portfolio',
+    url: 'ritikjain.info',
+    siteName: 'Ritik Portfolio',
     locale: 'en_US',
     type: 'website',
   },

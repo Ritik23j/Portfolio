@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,  // Add this for better compatibility with GitHub Pages
   basePath: '',
   images: {
-    domains: ['priyanshu.id'],
+    domains: ['ritikjain.info'],
     formats: ['image/webp'],
     unoptimized: true, // Required for static exports
   },

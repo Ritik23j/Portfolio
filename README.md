@@ -1,4 +1,4 @@
-# Priyanshu's Portfolio Website
+# Ritik's Portfolio Website
 
 Interactive personal portfolio website built with Next.js and Framer Motion, featuring 3D animations with Three.js.
 
@@ -32,20 +32,21 @@ Interactive personal portfolio website built with Next.js and Framer Motion, fea
    ```
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
-## Deployment Instructions for priyanshu.id
+## Deployment Instructions for ritikjain.info
 
 ### Configure Custom Domain
 
 1. Go to your project on the your domain provider site
 2. Navigate to "Settings" → "Domains"
-3. Add your domain: `priyanshu.id`
+3. Add your domain: `ritikjain.info`
 4. Follow Vercel's instructions to update your DNS settings
 
 ### 3. DNS Configuration
 
-At your domain registrar (where you purchased priyanshu.id):
+At your domain registrar (where you purchased ritikjain.info):
 
 1. Add an A record:
+
    - Name: @
    - Value: (Vercel's IP address or Github Pages etc)
 

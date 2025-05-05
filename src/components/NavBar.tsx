@@ -63,7 +63,7 @@ export default function NavBar() {
           className="text-xl font-bold"
         >
           <Link href="#home" className="gradient-text">
-            Priyanshu
+            Ritik
           </Link>
         </motion.div>
 
