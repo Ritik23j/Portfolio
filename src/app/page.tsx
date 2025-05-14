@@ -25,48 +25,46 @@ export default function Home() {
   // Real project data from CV
   const projects = [
     {
-      title: "Generative Replay with Compressed Features",
-      description: "Implemented a Hippocampal Memory Indexing module to mimic brain memory storage for NLP tasks, improving task performance by 25% and reducing catastrophic forgetting by 40%.",
-      imageSrc: "/project-ai.jpg",
-      technologies: ["PyTorch", "BERT", "GPT-2", "LAMOL"],
-      projectUrl: "https://github.com/Spriy4nshu/generative_replay",
-      githubUrl: "https://github.com/Spriy4nshu/generative_replay"
+      title: "Budget Based Trip Planner",
+      description: "Made a web application using Vue.js and Flask that offers personalized recommendations using a machine learning model, customizable itineraries, and weather information based on the user's budget and preferences.",
+      imageSrc: "/project-budget.png",
+      technologies: ["Vue.js", "Flask", "Machine Learning", "AWS"],
+      projectUrl: "https://github.com/ritik23j",
+      githubUrl: "https://github.com/ritik23j"
     },
     {
-      title: "Evaluating SpikeNet on Temporal Graphs",
-      description: "Benchmarked SpikeNet on a 17M+ edge dynamic graph dataset, achieving 67% accuracy in edge and node property prediction while improving efficiency by 15%.",
+      title: "Amazon Price Tracker",
+      description: "Developed a price-tracking tool to monitor Amazon product prices. Users receive notifications of price drops or increases of the added product, empowering them to make informed purchasing decisions.",
+      imageSrc: "/project-amazonTracker.png",
+      technologies: ["Redis", "AWS", "Flask", "Grafana", "RabbitMQ"],
+      projectUrl: "https://github.com/ritik23j",
+      githubUrl: "https://github.com/ritik23j"
+    },
+    {
+      title: "Web UI for Stable Diffusion",
+      description: "Implemented Web UI with Vue.js and Flask, containerized by Docker. Developed RESTful APIs for seamless integration between frontend, backend, and S3 Bucket for image storage.",
       imageSrc: "/project-portfolio.jpg",
-      technologies: ["SnnTorch", "Graph Neural Networks", "TGBN"],
-      projectUrl: "https://github.com/Spriy4nshu/tgbn-spikenet",
-      githubUrl: "https://github.com/Spriy4nshu/tgbn-spikenet"
+      technologies: ["Vue.js", "Flask", "Docker", "GCP", "Kubernetes"],
+      projectUrl: "https://github.com/ritik23j",
+      githubUrl: "https://github.com/ritik23j"
     },
     {
-      title: "Real-Time Vehicle Speed Detection",
-      description: "Hosted a YOLOv7-based live-streaming web app on AWS using Flask, improving image throughput from 12 to 15 FPS with 25% enhanced detection accuracy.",
-      imageSrc: "/project-ecommerce.jpg",
-      technologies: ["Python", "YOLOv7", "Flask", "AWS", "FFmpeg"],
-      projectUrl: "https://github.com/Spriy4nshu",
-      githubUrl: "https://github.com/Spriy4nshu"
-    },
-    {
-      title: "Car Renting Website - REYOCA",
-      description: "Deployed a car rental website on AWS EC2 with authentication, session management, payment processing via Stripe API, and real-time tracking with Maps API.",
+      title: "MyDrive Web Application",
+      description: "Developed the MyDrive web application platform for Tata Motors, enabling file and folder uploads to Amazon S3, along with download, sharing capabilities, and expiration time settings.",
       imageSrc: "/project-website.jpg",
-      technologies: ["Node.js", "MySQL", "AWS", "Maps API", "Stripe API"],
-      projectUrl: "https://github.com/Spriy4nshu",
-      githubUrl: "https://github.com/Spriy4nshu"
+      technologies: ["JavaScript", "ReactJS", "AWS S3"],
+      projectUrl: "https://github.com/ritik23j",
+      githubUrl: "https://github.com/ritik23j"
     }
   ];
   
 
   // Skills data grouped by category from CV
   const skills = {
-    languages: ["Python", "R", "MATLAB", "C++", "Java", "JavaScript", "SQL", "NoSQL", "BASH"],
-    "Machine Learning": ["PyTorch", "TensorFlow", "KERAS", "Computer Vision", "NLP", "LSTM", "SVM"],
-    "Deep Learning": ["Reinforcement Learning", "StableBaseline-3", "Gymnasium", "Transformers", "Neural Networks"],
-    "Data Engineering": ["Spark", "Hadoop", "ETL Pipelines", "Docker", "Kubernetes", "AWS"],
-    frameworks: ["Flask", "Next.js", "React", "Node.js", "Spring Boot", "REST"],
-    databases: ["MySQL", "MongoDB", "Firebase", "DynamoDB", "S3"]
+    languages: ["Java", "C++", "Python", "JavaScript", "CSS", "HTML", "SQL", "GraphQL", "GoLang", "TypeScript", "Next.js"],
+    frameworks: ["Spring", "Spring Boot", "Hibernate", "Angular", "React", "Node.js", "Express"],
+    databases: ["Postgres", "MySQL", "NoSQL", "Redis"],
+    tools: ["OOPS", "Design Patterns", "Git", "Kubernetes", "Docker", "JIRA", "Kafka", "AWS", "WebSockets"]
   };
 
   return (
@@ -95,7 +93,7 @@ export default function Home() {
           </motion.div>
           
           <AnimatedText 
-            text="Machine Learning Engineer & Software Developer" 
+            text="Software Engineer & Full Stack Developer" 
             className="text-xl sm:text-2xl md:text-3xl mb-8 text-foreground/80"
             delay={1}
           />
@@ -207,7 +205,7 @@ export default function Home() {
               className="relative w-full h-[400px] rounded-2xl overflow-hidden"
             >
               <Image
-                src="/profile.jpg" // Add your profile image to public folder
+                src="/profile.png" // Add your profile image to public folder
                 alt="Ritik"
                 fill
                 className="object-cover"
@@ -217,7 +215,7 @@ export default function Home() {
             
             <div>
               <AnimatedText 
-                text="Machine Learning Engineer & Software Developer focused on AI solutions"
+                text="Software Engineer & Full Stack Developer with expertise in web applications"
                 className="text-xl font-medium mb-6"
                 once={true}
                 delay={0.2}
@@ -230,7 +228,7 @@ export default function Home() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="text-foreground/80 mb-6"
               >
-                I&apos;m a Software Developer and Machine Learning Engineer based in New Brunswick, NJ. My expertise spans machine learning, computer vision, and full-stack development. At the New Jersey Turnpike Authority, I implement API communication pipelines and work with geographic information systems. Previously, I worked as a Data Engineer at Kaaye Technologies, where I revamped predictive forecast models using Apache Spark.
+                I&apos;m a Software Engineer based in Boulder, CO. My expertise spans full-stack development, RESTful APIs, and cloud technologies. At Zinnia, I design and implement scalable RESTful APIs with Spring Boot, working with authentication protocols like OAuth and JWT to optimize data interactions and system integration.
               </motion.p>
               
               <motion.p
@@ -240,7 +238,7 @@ export default function Home() {
                 transition={{ delay: 0.4, duration: 0.5 }}
                 className="text-foreground/80 mb-8"
               >
-                My research experience includes working as a Research Assistant at Rutgers University, developing classification models for turfgrass species and implementing real-time vehicle speed detection systems. I&apos;m passionate about developing practical AI solutions that bridge theoretical concepts with real-world applications. I&apos;ve contributed to various ML projects including generative replay models, spiking neural networks, and computer vision systems.
+                I have experience working with Kafka for high-throughput messaging and NoSQL for scalable data handling, enabling real-time monitoring and debugging via Datadog log integration. I build reusable components for financial web applications using React, Next.js, JavaScript, TypeScript, and Node.js, significantly enhancing the digital buying experience and supporting end-to-end solutions.
               </motion.p>
               
               <motion.div
@@ -305,7 +303,7 @@ export default function Home() {
           
           <div className="mt-12 text-center">
             <motion.a
-              href="https://github.com/Spriy4nshu"
+              href="https://github.com/ritik23j"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -391,12 +389,10 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row justify-between mb-2">
                 <h3 className="text-xl font-bold">Master of Science in Computer Science</h3>
-                <span className="text-foreground/70">September 2022 - May 2024</span>
+                <span className="text-foreground/70">August 2022 - May 2024</span>
               </div>
-              <h4 className="text-lg text-accent mb-2">Rutgers University, New Brunswick</h4>
-              <p className="text-foreground/80">GPA: 3.92/4.0</p>
-              <p className="text-foreground/80 mt-2">Research: Developed classification models for turfgrass species, created vehicle speed detection systems using YOLOv7</p>
-              <p className="text-foreground/80 mt-2">Activities and societies: Astronomical Society and Chess Club</p>
+              <h4 className="text-lg text-accent mb-2">University of Colorado Boulder</h4>
+              <p className="text-foreground/80">GPA: 3.8/4.0</p>
             </motion.div>
 
             <motion.div
@@ -407,13 +403,11 @@ export default function Home() {
               className="bg-card-bg rounded-xl p-6 border border-border"
             >
               <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-bold">Bachlor of Engineering in Electronics and Telecommunication</h3>
-                <span className="text-foreground/70">August 2016 - May 2020</span>
+                <h3 className="text-xl font-bold">Bachelor of Technology in Computer Engineering</h3>
+                <span className="text-foreground/70">August 2016 - July 2020</span>
               </div>
-              <h4 className="text-lg text-accent mb-2">Mumbai University, Mumbai, India</h4>
-              <p className="text-foreground/80">GPA: 3.76/4.0</p>
-              <p className="text-foreground/80 mt-2">Robotics Competition 2016: Winner </p>
-              <p className="text-foreground/80 mt-2">Activities and societies: Member of Extension Working Committee</p>
+              <h4 className="text-lg text-accent mb-2">Thapar Institute of Engineering and Technology, Patiala, India</h4>
+              <p className="text-foreground/80">GPA: 8.62/10</p>
             </motion.div>
           </div>
         </div>
@@ -437,14 +431,14 @@ export default function Home() {
               className="bg-card-bg rounded-xl p-6 border border-border"
             >
               <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-bold">Software Developer</h3>
-                <span className="text-foreground/70">July 2024 - Present</span>
+                <h3 className="text-xl font-bold">Software Engineer</h3>
+                <span className="text-foreground/70">May 2024 - Present</span>
               </div>
-              <h4 className="text-lg text-accent mb-4">New Jersey Turnpike Authority, Woodbridge, NJ</h4>
+              <h4 className="text-lg text-accent mb-4">Zinnia, Boulder, USA</h4>
               <ul className="list-disc pl-5 space-y-2 text-foreground/80">
-                <li>Implemented an API communication pipeline between Enterprise Asset Management System (SOAP) and Fluid Management System (REST) to maintain and manage fluid dispense information at NJTA Depots</li>
-                <li>Created a Linear Referencing System to incorporate new ramps acquired for Garden State Parkway routes by NJTA in enterprise geographic information system using ArcGIS Pro</li>
-                <li>Designed a communication pipeline between Loadrite (Loader Weighing Scale System) and NWOS (NJTA Weather Operation System) to maintain Salt inventory during winter season</li>
+                <li>Designed and implemented scalable RESTful APIs with Spring Boot, integrated authentication protocols like OAuth and JWT, optimizing data interactions and system integration.</li>
+                <li>Integrated Kafka for high-throughput messaging and NoSQL for scalable data handling. Enabled real-time monitoring and debugging via Datadog log integration.</li>
+                <li>Built reusable components for financial web applications using React, Next.js, JavaScript, TypeScript, and Node.js, significantly enhancing the digital buying experience and supporting end-to-end life insurance solutions.</li>
               </ul>
             </motion.div>
             
@@ -456,14 +450,13 @@ export default function Home() {
               className="bg-card-bg rounded-xl p-6 border border-border"
             >
               <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-bold">Research Assistant</h3>
-                <span className="text-foreground/70">April 2023 - May 2024</span>
+                <h3 className="text-xl font-bold">Capstone Project</h3>
+                <span className="text-foreground/70">September 2023 - May 2024</span>
               </div>
-              <h4 className="text-lg text-accent mb-4">Plant Biology Department, Rutgers University, New Brunswick, NJ</h4>
+              <h4 className="text-lg text-accent mb-4">Virufy, Remote, USA</h4>
               <ul className="list-disc pl-5 space-y-2 text-foreground/80">
-                <li>Modelled a VGG-19 classification model for phenotyping 7 different turfgrass species to improve the efficiency and remove a targeted bias of manual phenotyping</li>
-                <li>Generated a Graphical Pedigree dataset for 12 species of turfgrass to obtain a Family link of any plant from any year using a recursive query to maintain dynamism</li>
-                <li>Developed TurfCV, a Python library that takes an image of turfgrass/seed as input and analyzes the physical aspect (phenotype) and predicts (genotype) the future growth of the plant</li>
+                <li>Engineered a data pipeline using Airflow and PySpark, optimizing the real-time processing and storage of large-scale Covid-19 patient data in S3 buckets to support high-throughput, low-latency applications.</li>
+                <li>Conducted data analysis using NumPy and Pandas to derive actionable insights from the processed data which was fed into ML model.</li>
               </ul>
             </motion.div>
             
@@ -475,13 +468,15 @@ export default function Home() {
               className="bg-card-bg rounded-xl p-6 border border-border"
             >
               <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-bold">Research Assistant</h3>
-                <span className="text-foreground/70">November 2023 - May 2024</span>
+                <h3 className="text-xl font-bold">Software Engineer</h3>
+                <span className="text-foreground/70">September 2020 - June 2022</span>
               </div>
-              <h4 className="text-lg text-accent mb-4">Durandal Lab, Rutgers University, Piscataway, NJ</h4>
+              <h4 className="text-lg text-accent mb-4">Amdocs, Pune, India</h4>
               <ul className="list-disc pl-5 space-y-2 text-foreground/80">
-                <li>Hosted a real-time live streaming web application on AWS EC2 using Flask by collecting frames from the PSDK module of YOLOv7, which resulted in converting them to 15fps video clips using FFmpeg, reducing latency by 20%</li>
-                <li>Improved the efficiency of the number of images produced by the YOLOv7 module by 25%, which resulted in the detection of the speed of the vehicles from 12 images per second to 15 images per second, enhancing detection accuracy by 25%</li>
+                <li>AT&T Project: Led the design and implementation of scalable financial systems using Java and Spring, increasing transaction capacity by 40% and enhancing system responsiveness with frontend technologies.</li>
+                <li>Designed and maintained a CI/CD pipeline using GitHub, Jenkins, OpenShift, and Terraform to automate build, test (65% coverage), infrastructure provisioning, and deployment of microservices on commit to master/dev branches, ensuring consistent, scalable, and reliable delivery.</li>
+                <li>Enhanced Microservices by creating a new package and hosting it in nexus repo which reduces errors by 26 percent due to deployment of the wrong version of microservices.</li>
+                <li>Created Bash shell scripts in Linux to bootstrap, terminate and check the status of servers and automated the process of ingestion of bills for BriteBill and then improving the efficiency of deliveries by 13 percent.</li>
               </ul>
             </motion.div>
 
@@ -493,62 +488,15 @@ export default function Home() {
               className="bg-card-bg rounded-xl p-6 border border-border"
             >
               <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-bold">Data Engineer</h3>
-                <span className="text-foreground/70">November 2020 - October 2021</span>
+                <h3 className="text-xl font-bold">Graduate Engineering Trainee</h3>
+                <span className="text-foreground/70">January 2020 - June 2020</span>
               </div>
-              <h4 className="text-lg text-accent mb-4">Kaaye Technologies LTD, Navi Mumbai, India</h4>
+              <h4 className="text-lg text-accent mb-4">Tata Motors, Thane, India</h4>
               <ul className="list-disc pl-5 space-y-2 text-foreground/80">
-                <li>Revamped predictive forecast and classification models (LSTM, SVM) by leveraging Apache Spark for efficient distributed data processing, which resulted in scalable data storage using MongoDB and reduced processing time by 40%</li>
-                <li>Achieved model accuracies between 85-95% by analyzing historical data to identify past trends, which resulted in providing solutions to 5 retail-based clients, increasing their sales by an average of 15%</li>
+                <li>Developed the MyDrive web application platform, enabling file and folder uploads to Amazon S3, along with download, sharing capabilities, and expiration time settings using JavaScript and ReactJS.</li>
+                <li>The developed product was substantially able to reduce the costs by almost 15 percent that Tata Motors spent for platforms like OneDrive.</li>
               </ul>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="bg-card-bg rounded-xl p-6 border border-border"
-            >
-              <div className="flex flex-col md:flex-row justify-between mb-2">
-                <h3 className="text-xl font-bold">Machine Learning Intern</h3>
-                <span className="text-foreground/70">February 2020 - August 2020</span>
-              </div>
-              <h4 className="text-lg text-accent mb-4">ValueFirst, Gurgaon, India</h4>
-              <ul className="list-disc pl-5 space-y-2 text-foreground/80">
-                <li>Collaborated on an internal project to fully automate the employee onboarding process by reducing manual intervention by 35-50%, which resulted in efficient document verification and information extraction, saving significant time</li>
-                <li>Built a Naive Bayes classifier for email spam detection by achieving 95% accuracy, which resulted in effective spam filtering</li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Publications Section */}
-      <section id="publications" className="py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <AnimatedText 
-            text="Publications" 
-            className="text-3xl sm:text-4xl font-bold mb-12 text-center"
-            once={true}
-          />
-          
-          <div className="bg-card-bg rounded-xl p-6 border border-border">
-            <h3 className="text-xl font-bold mb-2">Classification of Grains and Quality Analysis using Deep Learning</h3>
-            <p className="text-foreground/70 mb-4">International Journal of Engineering and Advanced Technology (IJEAT), October 2021</p>
-            <div className="flex flex-wrap gap-2 mt-4">
-              <a 
-                href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=fK656bEAAAAJ&citation_for_view=fK656bEAAAAJ:d1gkVwhDpl0C" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 bg-accent text-white rounded-full text-sm hover:bg-accent-light transition-colors"
-              >
-                View on Google Scholar
-                <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -573,25 +521,25 @@ export default function Home() {
           
           <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6">
             <a 
-              href="mailto:pshrivastava403@outlook.com" 
+              href="mailto:ritik23j@gmail.com" 
               className="flex items-center gap-2 text-foreground/80 hover:text-accent transition-colors"
             >
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
-              pshrivastava403@outlook.com
+              ritik23j@gmail.com
             </a>
             <a 
-              href="tel:+17325226490" 
+              href="tel:+17203132765" 
               className="flex items-center gap-2 text-foreground/80 hover:text-accent transition-colors"
             >
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
               </svg>
-              +1 (732) 522-6490
+              +1 (720) 313-2765
             </a>
             <a 
-              href="https://linkedin.com/in/priy4nshu" 
+              href="https://linkedin.com/in/ritik-jain23" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center gap-2 text-foreground/80 hover:text-accent transition-colors"
@@ -600,7 +548,7 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                 <circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="2"></circle>
               </svg>
-              linkedin.com/in/priy4nshu
+              linkedin.com/in/ritik-jain23
             </a>
           </div>
         </div>
